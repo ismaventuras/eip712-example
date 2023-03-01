@@ -14,6 +14,26 @@ One of the key benefits of EIP712 is that it makes it easier for users to intera
 
 tl;dr This EIP aims to improve the usability of off-chain message signing for use on-chain.
 
+## Examples
+
+### EIP712_Example.sol
+
+On this example we verify on chain the signer of a EIP712 signed Ticket with the following structruture.
+
+```solidity
+    /// @notice Represents an off-chain ticket for an event
+    struct Ticket {
+        string eventName; // The name of the event
+        uint256 price; // The price (in wei) of the event
+    }
+```
+
+The function `getSigner` returns the addres of who signed that address and to be able to do that it hashes the typed data and gets the signer  using ECDSA recover.
+
+### TODO - ERC721_LazyMint.sol
+
+... to do ...
+
 ## Usage
 
 ```bash
