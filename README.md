@@ -13,3 +13,14 @@ EIP712 defines a JSON schema for specifying the structure of the data to be sign
 One of the key benefits of EIP712 is that it makes it easier for users to interact with dApps securely, as they can verify exactly what they are signing. It also enables developers to build more secure and trustless applications, as they can prove that a particular signature was obtained from a specific user.
 
 tl;dr This EIP aims to improve the usability of off-chain message signing for use on-chain.
+
+## Usage
+
+```bash
+#Clone the repo
+git clone https://github.com/ismaventuras/eip712-example
+#Install dependencies
+npm install
+#Run tests
+npm test # or npx hardhat test
+```

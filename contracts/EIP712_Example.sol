@@ -8,7 +8,7 @@ contract EIP712_Example is EIP712{
         
     /// @dev For this contract it should always be keccak256("Ticket(string eventName,uint256 price,address signedBy)")
     /// @dev but we are assigning the value in the constructor for the sake of learning    
-    bytes32 typedDataHash;
+    bytes32 immutable typedDataHash;
 
     constructor(string memory domainName, string memory signatureVersion, bytes32 typedDataHash_) EIP712(domainName,signatureVersion) {
         typedDataHash = typedDataHash_;        
