@@ -30,9 +30,9 @@ struct Ticket {
 
 The function `getSigner` returns the addres of who signed that address and to be able to do that it hashes the typed data and gets the signer  using ECDSA recover.
 
-### TODO - ERC721_LazyMint.sol
+### ERC721_LazyMint.sol
 
-... to do ...
+This example shows how to create an NFT allowing lazy minting.
 
 ## Usage
 
